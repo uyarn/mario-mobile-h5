@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "strict": false,  
+    "noImplicitAny": false,
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,                 
+    "skipLibCheck": true,                   
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+  },
+  "include": ["src/**/*.ts"],
+}
