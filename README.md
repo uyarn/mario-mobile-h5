@@ -3,7 +3,7 @@
 ### How to set up
 
 ```shell
-npm install
-npx grunt
-open Source/index.html
+yarn install
+yarn build
+open dist/index.html
 ```
