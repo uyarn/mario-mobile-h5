@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body {
@@ -11,10 +12,10 @@ body {
   color: #fafafa;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: rgb(238, 82, 77);
 }
 
 header {
-  height: 49px;
   overflow: hidden;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -69,7 +70,9 @@ a {
 
 section#game {
   min-height: 500px;
-  margin-top: 10px;
+  position: relative;
+  border: 20px solid rgb(238, 82, 77);
+  overflow: hidden;
 }
 
 section#game .EightBitter {
@@ -80,6 +83,7 @@ section#game .EightBitter {
 
 #controls {
   text-align: center;
+  display: none;
 }
 
 #controls .control {

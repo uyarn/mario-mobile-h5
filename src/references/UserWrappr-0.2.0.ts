@@ -890,7 +890,6 @@ module UserWrappr {
 
             this.GameStarter = new this.GameStartrConstructor(customs);
 
-            section.textContent = "";
             section.appendChild(this.GameStarter.container);
 
             this.GameStarter.proliferate(document.body, {

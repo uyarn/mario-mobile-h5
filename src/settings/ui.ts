@@ -18,12 +18,6 @@ FullScreenMario.FullScreenMario.settings.ui = {
     },
     "helpSettings": {
         "globalNameAlias": "{%%%%GAME%%%%}",
-        "openings": [
-            "Hi, thanks for playing FullScreenMario! It looks like you're using the console.",
-            "There's not really any way to stop you from messing around so if you'd like to know the common cheats, enter `{%%%%GAME%%%%}.UserWrapper.displayHelpOptions()` here.",
-            "If you'd like, go ahead and look around the source code. There are a few surprises you might have fun with... ;)",
-            "http://www.github.com/FullScreenShenanigans/FullScreenMario"
-        ],
         "options": {
             "Map": [{
                 "title": "{%%%%GAME%%%%}.MapsHandler.setMap",
@@ -161,12 +155,12 @@ FullScreenMario.FullScreenMario.settings.ui = {
     "sizes": {
         "NES": {
             "width": 512,
-            "height": 464,
+            "height": 500,
             "full": false
         },
         "Wide": {
             "width": Infinity,
-            "height": 464,
+            "height": 500,
             "full": false
         },
         "Large": {

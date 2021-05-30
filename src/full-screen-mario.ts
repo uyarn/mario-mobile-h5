@@ -492,6 +492,7 @@ module FullScreenMario {
          * @param {Player} player
          */
         keyDownLeft(FSM: FullScreenMario, event?: Event): void {
+            console.log('left')
             if (FSM.GamesRunner.getPaused()) {
                 return;
             }
@@ -8951,4 +8952,8 @@ module FullScreenMario {
             return current;
         }
     }
+}
+
+module FSM {
+
 }

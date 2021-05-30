@@ -4,6 +4,7 @@
     "description": "An HTML5 remake of the original Super Mario Brothers - expanded for modern browsing.",
     "version": "1.0.0",
     "scripts": {
+        "dev": "gulp watch",
         "build": "gulp"
     },
     "contributors": [
@@ -14,6 +15,7 @@
     "devDependencies": {
         "del": "^6.0.0",
         "gulp": "^4.0.2",
+        "gulp-less": "^4.0.1",
         "gulp-typescript": "^6.0.0-alpha.1",
         "gulp-uglify": "^3.0.2",
         "typescript": "^3.8.3"

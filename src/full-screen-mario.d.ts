@@ -1,3 +1,6 @@
+
+
+
 declare module FullScreenMario {
     export interface IMapScreenr extends MapScreenr.IMapScreenr {
         bottomPlatformMax: number;
@@ -102,14 +105,14 @@ declare module FullScreenMario {
     export interface IText extends IThing { }
 
     export interface ISolid extends IThing {
-        actionLeft? (thing: ICharacter, other: ISolid, transport?: any): void;
-        actionTop? (thing: ICharacter, other: ISolid, transport?: any): void;
+        actionLeft?(thing: ICharacter, other: ISolid, transport?: any): void;
+        actionTop?(thing: ICharacter, other: ISolid, transport?: any): void;
         attachedCharacter?: ICharacter;
-        bottomBump? (thing: ISolid, other: ICharacter): void;
+        bottomBump?(thing: ISolid, other: ICharacter): void;
         collide(thing: ICharacter, other: ISolid): void;
         collideHidden?: boolean;
         killonend?: boolean | { (thing: ISolid, group: ISolid[], i: number): void };
-        onRestedUpon? (thing: ISolid, other: ICharacter): void;
+        onRestedUpon?(thing: ISolid, other: ICharacter): void;
         solid: boolean;
         transport?: any;
         up?: ICharacter;
@@ -142,7 +145,7 @@ declare module FullScreenMario {
     }
 
     export interface IDetectCollision extends IDetector {
-        activateFail? (thing: ICharacter): void;
+        activateFail?(thing: ICharacter): void;
         activate(thing: ICharacter, other?: IDetectCollision): void;
         noActivateDeath?: boolean;
     }
@@ -200,20 +203,20 @@ declare module FullScreenMario {
     export interface ICharacter extends IThing {
         allowUpSolids?: boolean;
         blockparent?: ISolid;
-        animate? (thing: ICharacter, other?: ISolid): void;
+        animate?(thing: ICharacter, other?: ISolid): void;
         checkOverlaps?: boolean;
-        collide? (thing: IThing, other: IThing): void;
+        collide?(thing: IThing, other: IThing): void;
         collidePrimary?: boolean;
         counter?: number;
         death(thing: IThing, severity?: number): void;
         direction: boolean | number;
-        emergeOut? (thing: ICharacter, other: ISolid): void;
+        emergeOut?(thing: ICharacter, other: ISolid): void;
         gravity?: number;
         group: string;
         hopping?: boolean;
         jumpheight?: number;
         lookleft: boolean;
-        killonend? (thing: IThing): void;
+        killonend?(thing: IThing): void;
         player?: boolean;
         moveleft: boolean;
         nocollidechar?: boolean;
@@ -224,8 +227,8 @@ declare module FullScreenMario {
         noflip?: boolean;
         nokillend?: boolean;
         nomove?: boolean;
-        onCollideUp? (thing: ICharacter, other: ISolid): void;
-        onResting? (thing: ICharacter, other: ISolid): void;
+        onCollideUp?(thing: ICharacter, other: ISolid): void;
+        onResting?(thing: ICharacter, other: ISolid): void;
         overlaps?: ISolid[];
         resting?: ISolid;
         scoreBelow: number;
@@ -240,7 +243,7 @@ declare module FullScreenMario {
         speed: number;
         type: string;
         undermid?: ISolid;
-        onRestingOff? (character: ICharacter, other: ISolid): void;
+        onRestingOff?(character: ICharacter, other: ISolid): void;
         under?: ISolid[];
     }
 
@@ -335,7 +338,7 @@ declare module FullScreenMario {
     }
 
     export interface IItem extends ICharacter {
-        action? (thing: IPlayer, other: IItem): void;
+        action?(thing: IPlayer, other: IItem): void;
     }
 
     export interface ICoin extends IItem {
@@ -694,5 +697,8 @@ declare module FullScreenMario {
         macroSectionFail(reference: any, prethings: any[], area: MapsCreatr.IMapsCreatrArea, map: MapsCreatr.IMapsCreatrMap, scope: any): any;
         macroSectionDecider(reference: any, prethings: any[], area: MapsCreatr.IMapsCreatrArea, map: MapsCreatr.IMapsCreatrMap, scope: any): any;
         ensureCorrectCaller(current: any): FullScreenMario;
+    }
+    export interface FSM {
+        player: IPlayer
     }
 }

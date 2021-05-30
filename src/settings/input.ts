@@ -2,12 +2,12 @@ FullScreenMario.FullScreenMario.settings.input = {
     "InputWritrArgs": {
         "aliases": {
             // Keyboard aliases
-            "left":   [65, 37],     // a,     left
-            "right":  [68, 39],     // d,     right
-            "up":     [87, 38, 32], // w,     up,    space
-            "down":   [83, 40],     // s,     down
+            "left": [65, 37],     // a,     left
+            "right": [68, 39],     // d,     right
+            "up": [87, 38, 32], // w,     up,    space
+            "down": [83, 40],     // s,     down
             "sprint": [16, 17],     // shift, ctrl
-            "pause":  [80],         // p (pause)
+            "pause": [80],         // p (pause)
             // Mouse aliases
             "rightclick": [3],
         },
